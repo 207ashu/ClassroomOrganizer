@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1088085301555",
+    "firebase_url": "https://classroomorganizer-bfafc.firebaseio.com",
+    "project_id": "classroomorganizer-bfafc",
+    "storage_bucket": "classroomorganizer-bfafc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088085301555:android:c9c1bed2bea579bc",
+        "android_client_info": {
+          "package_name": "com.neurobreach.classroomorganizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088085301555-uaae08tr4bslfda0f3e6tbqrrg38s9cv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neurobreach.classroomorganizer",
+            "certificate_hash": "9d4e717531a9e4da32b30cbb0299191ad63e1d01"
+          }
+        },
+        {
+          "client_id": "1088085301555-12pqk4jgc84r3t3gndli38kkvi9afklv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcOkmNcHW6wtxbTfxhUWhCxa1hSik4jm8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088085301555-12pqk4jgc84r3t3gndli38kkvi9afklv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
