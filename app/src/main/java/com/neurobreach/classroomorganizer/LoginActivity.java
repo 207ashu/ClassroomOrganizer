@@ -57,40 +57,48 @@ public class LoginActivity extends AppCompatActivity {
         a=email.getText().toString();
         b=pwd.getText().toString();
 
+        if(a.contains("@")&&a.contains(".")){
+            Cursor cursor = sd.rawQuery("select * from tname", null);
+            int flag=0;
 
-        Cursor cursor = sd.rawQuery("select * from tname", null);
-        int flag=0;
-
-        //Toast.makeText(SignUp.this,a + " " + b,Toast.LENGTH_SHORT).show();
-        while (cursor.moveToNext()) {
-
-
-            String strEmail=cursor.getString(3).toString();
-            String strPwd=cursor.getString(4).toString();
+            //Toast.makeText(SignUp.this,a + " " + b,Toast.LENGTH_SHORT).show();
+            while (cursor.moveToNext()) {
 
 
-            if (a.equals(strEmail) && b.equals(strPwd)) {
+                String strEmail=cursor.getString(3).toString();
+                String strPwd=cursor.getString(4).toString();
+
+
+                if (a.equals(strEmail) && b.equals(strPwd)) {
+                    flag=1;
+                    category=cursor.getString(6).toString();
+                }
+
+            }
+            if(cat.equalsIgnoreCase(category)){
                 flag=1;
-                category=cursor.getString(6).toString();
+            }else{
+                flag=0;
             }
 
-        }
-        if(cat.equalsIgnoreCase(category)){
-            flag=1;
-        }else{
-            flag=0;
-        }
-        if(flag==0){
 
-            Toast.makeText(this,"Invalid Email or Password",Toast.LENGTH_SHORT).show();
-        }else{Intent i;
+            if(flag==0){
+                Toast.makeText(this,"Invalid Email or Password",Toast.LENGTH_SHORT).show();
+            }else{Intent i;
 
-            if(category.equalsIgnoreCase("student"))
-                 i = new Intent(LoginActivity.this, StudentActivity.class);
-            else
-                i = new Intent(LoginActivity.this, AddNoticeActivity.class);
-            startActivity(i);
-            finish();
+                if(category.equalsIgnoreCase("student"))
+                    i = new Intent(LoginActivity.this, StudentActivity.class);
+                else
+                    i = new Intent(LoginActivity.this, AddNoticeActivity.class);
+                startActivity(i);
+                finish();
+            }
         }
+        else
+            Toast.makeText(this,"Enter correct Email",Toast.LENGTH_SHORT).show();
+
+
+
+
     }
 }
