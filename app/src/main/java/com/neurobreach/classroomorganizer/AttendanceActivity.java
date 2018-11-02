@@ -17,21 +17,18 @@ public class AttendanceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendance);
         attendance=findViewById(R.id.attendance);
-        enroll=findViewById(R.id.enrollment_no_att);
+       // enroll=findViewById(R.id.enrollment_no_att);
 
         attendance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String en=enroll.getText().toString();
-                if(en.equalsIgnoreCase(""))
-                    Toast.makeText(AttendanceActivity.this,"Enter Correct Details",Toast.LENGTH_SHORT).show();
-                else{
+
                     AlertDialog.Builder builder = new AlertDialog.Builder(AttendanceActivity.this);
                     builder.setCancelable(true);
                     builder.setTitle("Attendance");
                     builder.setMessage("Your Attendance is 65 %");
                     builder.show();
-                }
+
             }
         });
     }
