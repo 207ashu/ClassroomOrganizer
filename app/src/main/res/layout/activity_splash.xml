@@ -4,13 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/splash"
     tools:context=".SplashActivity">
 
-    <ImageView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/splash"
-        android:scaleType="centerCrop"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:text="Classroom Organizer"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
 
 </RelativeLayout>

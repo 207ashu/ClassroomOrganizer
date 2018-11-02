@@ -9,25 +9,6 @@
     tools:context=".AttendanceActivity">
 
 
-    <TextView
-        android:id="@+id/enrollment_no_tv_att"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_marginLeft="15dp"
-        android:text="Enrollment No"
-
-        android:textColor="@color/white"/>
-
-    <EditText
-        android:id="@+id/enrollment_no_att"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:textColor="@color/white"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_below="@+id/enrollment_no_tv_att"/>
 
     <Button
         android:id="@+id/attendance"
@@ -36,7 +17,7 @@
         android:textSize="24sp"
         android:textColor="@color/black"
         android:text="View Attendance"
-        android:layout_below="@id/enrollment_no_att"
+        android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

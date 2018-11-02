@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="5dp"
-        android:hint="@string/app_name"
+        android:inputType="textPersonName"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="20sp" />
@@ -173,6 +173,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="5dp"
         android:hint="CSE"
+
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="20sp" />
@@ -184,6 +185,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="5dp"
         android:text="Enrollment No"
+        android:inputType="number"
         android:textColor="@color/white"
         android:visibility="gone"
         android:textSize="18sp"/>
@@ -195,6 +197,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="5dp"
         android:hint="41296303116"
+        android:inputType="number"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:visibility="gone"
